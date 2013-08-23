@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>Phonegap Meetup Vancouver</title>
+		<title>Phonegap Presentation</title>
 
 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
 		<meta name="author" content="Hakim El Hattab">
@@ -49,148 +49,127 @@
 					</a>
 					</div>
 					<div class="container">
-		            	<p class="blink title">Command Line Interface</p>
+		            	<p class="blink title">PhoneGap</p>
 		            </div>
 					<p>
-						<small>Presentation by <a href="http://bennmapes.com">Benn Mapes</a> / <a href="http://twitter.com/bennmapes">@bennmapes</a></small>
+						<small>Presentation by Steve Gill</a> / <a href="http://twitter.com/stevesgill">@stevesgill</a></small>
 					</p>
 				</section>
-
+                
+                <section>
+                    <h2>Overview</h2>
+                </section>
+                <section>
+                    <p>PhoneGap is a free open source framework that allows developers to create cross-platform mobile applications using html, javascript and css</p>
+                </section>
+                <section>
+                    <ul>
+                        <li>Content is displayed on a webview</li>
+                        <li>Use javascript to native bridge to access native features</li>
+                        <li>PhoneGap API is based on web standards</li>
+                        <li>Apps are Hybrid (part native/part web)</li>
+                        <li>Great plugin support for extending the platform</li>
+                        <li>Reuse code accross platforms</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Supported Platforms</h3>
+                    <ul>
+                        <li>iOS & OSX</li>
+                        <li>Android (All devices)</li>
+                        <li>Blackberry 10</li>
+                        <li>Windows Phone & Windows 8</li>
+                        <li>Firefox OS (upcoming)</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Apache Cordova</h3>
+                    <p>PhoneGap is a distribution of Apache Cordova</p>
+                    <p>Has contributors from Google, IBM, RIM, Microsoft, Intel, Mozilla and more</p>
+                </section>
 				<section>
-					<h2>Why the CLI?</h2>
-					<p> Because it's easy,</p>
-					<p> How easy? </p>
-					<img src="img/easyasshit.gif" alt="#EasyAsShit">
-					<p> 
-						<small> Thanks <a href="https://twitter.com/chews">@chews</a> </small>
-					</p>
+					<h2>PhoneGap 3.0</h2>
+					<p>With PhoneGap 3.0, all of our APIs have been ripped into plugins and we have introduced the new workflow for managing your PhoneGap/Cordova apps.</p>
 				</section>
-
 				<section>
-					<section>
-						<h2>The Hard Part</h2>
-						<p>
-							There are a few drawbacks to this simplified interface :
-						</p>
-						<ul>
-							<p class="grey fragment roll-in"> - Getting away from the stardard platform IDE's (this could also be a plus!) </p>
-							<p class="grey fragment roll-in"> - Debugging can be hard but there tools to help (ripple emulator). </p>
-							<p class="grey fragment roll-in"> - Cutomization of resources (icons, splashscreens etc), we're working on this. </p>
-							<p class="grey fragment roll-in"> - Using the config.xml to describe platform specific settings can be complicated. </p>
-						</ul>
-					</section>
-					<section>
-						<p> The more we use the cli the better it will get. </p>
-						<p class="grey">phonegap</p>
-						<a href="#/2">
-							<img src="img/phonegap-install.jpg" alt="Phonegap Install">
-						</a>
-						<p class="grey">corodva</p>
-						<a href="#/2">
-							<img src="img/cordova-install.jpg" alt="Cordova Install">
-						</a>
-					</section>
-					<section>
-						<p>Log any issues you find on Jira if they arn't already there</p>
-						<a href="https://issues.apache.org/jira/browse/CB">https://issues.apache.org/jira/browse/CB</a>
-					</section>
+				    <h3>Plugins</h3>
+				    <ul>
+				        <li>All of our APIs are now plugins</li>
+				        <li>Create new plugins to extend capabilities of PhoneGap</li>
+				        <li>Lots of community plugins to choose from</li>
+				        <li>Soon releasing an online registry of plugins (plugins.cordova.io)</li>
+				    </ul>
 				</section>
-
+                <section>
+					<h2>PhoneGap Build</h2>
+					<p>Package mobile apps in the cloud</p>
+				</section>
 				<section>
-					<h2> Token Beer Slide </h2>
+					<h2>PhoneGap Build</h2>
+					<ul>
+					    <li>Upload your PG app to create binary for distribution</li>
+					    <li>QR code to download app right onto device</li>
+					    <li>Supports pre-approved plugins</li>
+					    <li>Apart of the Adobe Creative Cloud</li>
+					</ul>
+				</section>
+				<section>
+				    <h2>Quick Demo of Build</h2>
+				</section>
+				<section>
+				    <h2>The PhoneGap CLI </h2>
+				    <h2>(Command-Line Interface)</h2>
+				</section>
+				<section>
+				    <p>Our new command-line tool to develop apps for multiple platforms.</p>
+				</section>
+				<section>
+					<h3>Installation</h3>
+					<p class="">phonegap</p>
 					<a href="#/2">
-						<img src="img/beer.jpg" alt="Beer">
+						<img src="img/phonegap-install.jpg" alt="Phonegap Install">
+					</a>
+					<p class="">corodva</p>
+					<a href="#/2">
+						<img src="img/cordova-install.jpg" alt="Cordova Install">
 					</a>
 				</section>
-
+                <section>
+					<h2>corodova-cli vs phonegap-cli</h2>
+					<p >
+						phonegap-cli :
+					</p>
+					<ul>
+						<p> - require('cordova-cli') </p>
+						<p> - require('phonegap-build-cli') </p>
+					</ul>
+				</section>
 				<section>
-					<section>
-						<h2>The Easy Part</h2>
-						<p>
-							Using the CLI we can build and run applications with just a few lines in the terminal.
-						</p>
-					</section>
-					<section>
-						<h3>Create</h3>
-						<p class="grey">phonegap</p>
-						<a href="#/3">
-							<img src="img/phonegap-create.jpg" alt="Phonegap Create">
-						</a>
-						<p class="grey">corodva</p>
-						<a href="#/3">
-							<img src="img/cordova-create.jpg" alt="Cordova Create">
-						</a>
-					</section>
-					<section>
-						<h3>Build</h3>
-						<p class="grey">phonegap</p>
-						<a href="#/3">
-							<img src="img/phonegap-cd.jpg" alt="Phonegap Cd">
-						</a>
-						<a href="#/3">
-							<img src="img/phonegap-build.jpg" alt="Phonegap Build">
-						</a>
-						<p class="grey">corodva</p>
-						<a href="#/3">
-							<img src="img/cordova-build.jpg" alt="Cordova Build">
-						</a>
-					</section>
-					<section>
-						<h3>Run</h3>
-						<p class="grey">phonegap</p>
-						<a href="#/3">
-							<img src="img/phonegap-run.jpg" alt="Phonegap Run">
-						</a>
-						<p class="grey">corodva</p>
-						<a href="#/3">
-							<img src="img/cordova-run.jpg" alt="Cordova Run">
-						</a>
-					</section>
+					<h2>CLI Demo</h2>
 				</section>
 
 				<section>
-					<section>
-						<h2>corodova-cli vs phonegap-cli</h2>
-						<p >
-							phonegap-cli :
-						</p>
-						<ul>
-							<p class="grey"> - require('cordova-cli') </p>
-							<p class="grey"> - require('phonegap-build-cli') </p>
-							<div class="gray">
-								<img height="100" width="100" src="img/bells.png">
-								<img height="100" width="100" class="none" src="img/plus.png">
-								<img height="100" width="100" src="img/whistle.png">
-							</div>
-						</ul>
-					</section>
-					<section>
-						<p class="grey">Local</p>
-						<a href="#/4">
-							<img src="img/phonegap-local.jpg" alt="Phonegap Local">
-						</a>
-					</section>
-					<section>
-						<p class="grey">Remote</p>
-						<a href="#/4">
-							<img src="img/phonegap-remote.jpg" alt="Phonegap Remote">
-						</a>
-					</section>
-				</section>
-
-				<section>
-					<h1>Plugins</h1>
+					<h2>Plugins</h2>
 					<a href="#/6">
 						<img src="img/cordova-plugin.jpg" alt="Cordova Plugin">
 					</a>
 					<p> Easy right? </p>
 				</section>
-
+                <section>
+                    <h2>Useful Links</h2>
+                    <ul> 
+                        <li><a href="http://phonegap.com">Adobe PhoneGap (phonegap.com)</a></li>
+                        <li><a href="http://build.phonegap.com/">Adobe PhoneGap Build (build.cordova.io)</a></li>
+                        <li><a href="http://cordova.io">Apache Cordova (cordova.io)</a></li>
+                        <li><a href="http://docs.phonegap.com">Documentation(docs.phonegap.com)</a>
+                        <li><a href="http://wiki.cordova.io">Cordova Wiki (wiki.cordova.io)</a></li>
+                    </ul>
+                </section>
 				<section>
 					<h1>THE END</h1>
-					<h2>Questions?</h2>
+					<h3>Questions?</h3>
 					<p>
-						<small>By Benn Mapes</small>
+					    <small>By Steve Gill</small>
 					</p>
 				</section>
 
